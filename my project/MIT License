@@ -1,0 +1,11 @@
+
+---
+
+### 7. `run_all.sh`
+一键执行脚本（Linux版）
+
+```bash
+#!/bin/bash
+python scripts/split_dataset_light.py --input_ply full_scene.ply --output_dir outputs/tiles/
+python scripts/train_small_ngp_light.py --tiles_dir outputs/tiles/ --instant_ngp_exec /path/to/instant-ngp/build/testbed --n_workers 2
+python viewer/dynamic_viewer.py --tiles_dir outputs/tiles/

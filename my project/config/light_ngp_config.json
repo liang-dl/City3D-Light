@@ -1,0 +1,8 @@
+{
+  "grid_resolution": 8,
+  "n_levels": 12,
+  "batch_size": 8192,
+  "n_steps": 1500,
+  "loss_threshold": 1e-2,
+  "target_scale": 0.8
+}
